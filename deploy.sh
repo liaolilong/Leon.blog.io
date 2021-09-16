@@ -37,7 +37,7 @@ git push -f $githubUrl main:gh-pages # 推送到github gh-pages分支
 # fi
 # git add -A
 # git commit -m "${msg}"
-# git push -f $codingUrl master # 推送到coding啊
+# git push -f $codingUrl master # 推送到coding啊1
 
 cd -
 rm -rf docs/.vuepress/dist
