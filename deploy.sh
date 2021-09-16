@@ -14,10 +14,10 @@ echo 'repository.leon.io' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=https://github.com/liaolilong/Leon.blog.io.git
+  githubUrl=git@github.com:liaolilong/Leon.blog.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://github.com/liaolilong/Leon.blog.io.git
+  githubUrl=https://liaolilong:${GITHUB_TOKEN}@github.com/liaolilong/Leon.blog.io.git
   git config --global user.name "Leon"
   git config --global user.email "18159173273@qq.com"
 fi
